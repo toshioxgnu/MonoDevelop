@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{486F4AC5-324A-4702-8A5D-20425839132D}|Default">
+  <MonoDevelop.Ide.ItemProperties.Buttons PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Buttons/MainWindow.cs">
+    <Files>
+      <File FileName="Buttons/Program.cs" Line="1" Column="1" />
+      <File FileName="Buttons/MainWindow.cs" Line="29" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Buttons" expanded="True">
+            <Node name="Buttons" expanded="True">
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,3 @@
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/bin/Release/PrimerProyecto.exe
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/obj/x86/Release/PrimerProyecto.exe
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/obj/x86/Release/PrimerProyecto.csprojAssemblyReference.cache
