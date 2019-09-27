@@ -1,0 +1,5 @@
+/home/jose/Projects/Checkbox/Checkbox/obj/x86/Debug/Checkbox.csprojAssemblyReference.cache
+/home/jose/Projects/Checkbox/Checkbox/bin/Debug/Checkbox.exe
+/home/jose/Projects/Checkbox/Checkbox/bin/Debug/Checkbox.pdb
+/home/jose/Projects/Checkbox/Checkbox/obj/x86/Debug/Checkbox.exe
+/home/jose/Projects/Checkbox/Checkbox/obj/x86/Debug/Checkbox.pdb
