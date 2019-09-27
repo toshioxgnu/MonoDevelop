@@ -1,5 +1,0 @@
-/home/jose/Projects/WindowsForms/WindowsForms/bin/Debug/WindowsForms.exe
-/home/jose/Projects/WindowsForms/WindowsForms/bin/Debug/WindowsForms.pdb
-/home/jose/Projects/WindowsForms/WindowsForms/obj/x86/Debug/WindowsForms.csprojAssemblyReference.cache
-/home/jose/Projects/WindowsForms/WindowsForms/obj/x86/Debug/WindowsForms.exe
-/home/jose/Projects/WindowsForms/WindowsForms/obj/x86/Debug/WindowsForms.pdb
