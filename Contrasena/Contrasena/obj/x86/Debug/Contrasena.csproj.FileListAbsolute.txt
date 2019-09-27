@@ -1,0 +1,5 @@
+/home/jose/Projects/Contrasena/Contrasena/obj/x86/Debug/Contrasena.csprojAssemblyReference.cache
+/home/jose/Projects/Contrasena/Contrasena/bin/Debug/Contrasena.exe
+/home/jose/Projects/Contrasena/Contrasena/bin/Debug/Contrasena.pdb
+/home/jose/Projects/Contrasena/Contrasena/obj/x86/Debug/Contrasena.exe
+/home/jose/Projects/Contrasena/Contrasena/obj/x86/Debug/Contrasena.pdb

@@ -1,0 +1,5 @@
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/obj/x86/Debug/PrimerProyecto.csprojAssemblyReference.cache
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/bin/Debug/PrimerProyecto.exe
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/bin/Debug/PrimerProyecto.pdb
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/obj/x86/Debug/PrimerProyecto.exe
+/home/jose/Projects/PrimerProyecto/PrimerProyecto/obj/x86/Debug/PrimerProyecto.pdb

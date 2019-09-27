@@ -1,0 +1,5 @@
+/home/jose/Projects/Buttons/Buttons/bin/Debug/Buttons.exe
+/home/jose/Projects/Buttons/Buttons/bin/Debug/Buttons.pdb
+/home/jose/Projects/Buttons/Buttons/obj/x86/Debug/Buttons.csprojAssemblyReference.cache
+/home/jose/Projects/Buttons/Buttons/obj/x86/Debug/Buttons.exe
+/home/jose/Projects/Buttons/Buttons/obj/x86/Debug/Buttons.pdb
