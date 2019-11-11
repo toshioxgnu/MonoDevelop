@@ -1,16 +1,13 @@
-﻿using System;
+using System;
 using Gtk;
 
-namespace Contrasena
-{
-    class MainClass
-    {
-        public static void Main(string[] args)
-        {
-            Application.Init();
-            MainWindow win = new MainWindow();
-            win.Show();
-            Application.Run();
+namespace Contrasena {
+    class MainClass {
+        public static void Main (string[] args) {
+            Application.Init ();
+            MainWindow win = new MainWindow ();
+            win.Show ();
+            Application.Run ();
         }
     }
 }

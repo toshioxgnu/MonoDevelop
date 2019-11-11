@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jose/Projects/sqltest/sqltest.csproj": {}
+  },
+  "projects": {
+    "/home/jose/Projects/sqltest/sqltest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jose/Projects/sqltest/sqltest.csproj",
+        "projectName": "sqltest",
+        "projectPath": "/home/jose/Projects/sqltest/sqltest.csproj",
+        "packagesPath": "/home/jose/.nuget/packages/",
+        "outputPath": "/home/jose/Projects/sqltest/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/jose/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

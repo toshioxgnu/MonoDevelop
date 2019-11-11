@@ -1,0 +1,4 @@
+/home/jose/Projects/sqltest/obj/Debug/netcoreapp2.2/sqltest.csprojAssemblyReference.cache
+/home/jose/Projects/sqltest/obj/Debug/netcoreapp2.2/sqltest.csproj.CoreCompileInputs.cache
+/home/jose/Projects/sqltest/obj/Debug/netcoreapp2.2/sqltest.AssemblyInfoInputs.cache
+/home/jose/Projects/sqltest/obj/Debug/netcoreapp2.2/sqltest.AssemblyInfo.cs

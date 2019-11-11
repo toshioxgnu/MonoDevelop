@@ -1,0 +1,11 @@
+/home/jose/Projects/Numeros/obj/Debug/netcoreapp3.0/Numeros.csprojAssemblyReference.cache
+/home/jose/Projects/Numeros/obj/Debug/netcoreapp3.0/Numeros.AssemblyInfoInputs.cache
+/home/jose/Projects/Numeros/obj/Debug/netcoreapp3.0/Numeros.AssemblyInfo.cs
+/home/jose/Projects/Numeros/bin/Debug/netcoreapp3.0/Numeros
+/home/jose/Projects/Numeros/bin/Debug/netcoreapp3.0/Numeros.deps.json
+/home/jose/Projects/Numeros/bin/Debug/netcoreapp3.0/Numeros.runtimeconfig.json
+/home/jose/Projects/Numeros/bin/Debug/netcoreapp3.0/Numeros.runtimeconfig.dev.json
+/home/jose/Projects/Numeros/bin/Debug/netcoreapp3.0/Numeros.dll
+/home/jose/Projects/Numeros/bin/Debug/netcoreapp3.0/Numeros.pdb
+/home/jose/Projects/Numeros/obj/Debug/netcoreapp3.0/Numeros.dll
+/home/jose/Projects/Numeros/obj/Debug/netcoreapp3.0/Numeros.pdb
