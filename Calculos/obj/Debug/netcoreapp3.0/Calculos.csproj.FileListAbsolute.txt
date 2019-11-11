@@ -1,0 +1,11 @@
+/home/jose/Projects/Calculos/obj/Debug/netcoreapp3.0/Calculos.csprojAssemblyReference.cache
+/home/jose/Projects/Calculos/obj/Debug/netcoreapp3.0/Calculos.AssemblyInfoInputs.cache
+/home/jose/Projects/Calculos/obj/Debug/netcoreapp3.0/Calculos.AssemblyInfo.cs
+/home/jose/Projects/Calculos/bin/Debug/netcoreapp3.0/Calculos
+/home/jose/Projects/Calculos/bin/Debug/netcoreapp3.0/Calculos.deps.json
+/home/jose/Projects/Calculos/bin/Debug/netcoreapp3.0/Calculos.runtimeconfig.json
+/home/jose/Projects/Calculos/bin/Debug/netcoreapp3.0/Calculos.runtimeconfig.dev.json
+/home/jose/Projects/Calculos/bin/Debug/netcoreapp3.0/Calculos.dll
+/home/jose/Projects/Calculos/bin/Debug/netcoreapp3.0/Calculos.pdb
+/home/jose/Projects/Calculos/obj/Debug/netcoreapp3.0/Calculos.dll
+/home/jose/Projects/Calculos/obj/Debug/netcoreapp3.0/Calculos.pdb

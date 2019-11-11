@@ -1,7 +1,3 @@
-
-public partial class MainWindow
-{
-	private void Build()
-	{
-	}
+public partial class MainWindow {
+    private void Build () { }
 }

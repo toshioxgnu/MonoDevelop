@@ -7,10 +7,10 @@
 using System;
 using System.Reflection;
 
-[assembly : System.Reflection.AssemblyCompanyAttribute ("Numeros")]
-[assembly : System.Reflection.AssemblyConfigurationAttribute ("release")]
+[assembly : System.Reflection.AssemblyCompanyAttribute ("Calculos")]
+[assembly : System.Reflection.AssemblyConfigurationAttribute ("Debug")]
 [assembly : System.Reflection.AssemblyFileVersionAttribute ("1.0.0.0")]
 [assembly : System.Reflection.AssemblyInformationalVersionAttribute ("1.0.0")]
-[assembly : System.Reflection.AssemblyProductAttribute ("Numeros")]
-[assembly : System.Reflection.AssemblyTitleAttribute ("Numeros")]
+[assembly : System.Reflection.AssemblyProductAttribute ("Calculos")]
+[assembly : System.Reflection.AssemblyTitleAttribute ("Calculos")]
 [assembly : System.Reflection.AssemblyVersionAttribute ("1.0.0.0")]
