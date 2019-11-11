@@ -7,7 +7,7 @@ namespace Numeros {
             Console.WriteLine ("Ingrese Numero");
             num = Convert.ToInt32 (Console.ReadLine ());
             nombreNumero (num);
-            Console.ReadKey();
+            Console.ReadKey ();
         }
         // Recibira como parametros dos numeros y devolvera
         static void nombreNumero (int numero) {
