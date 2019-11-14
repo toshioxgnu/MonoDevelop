@@ -1,0 +1,11 @@
+/home/jose/Projects/MysqlConnection/MysqlConnection/obj/x86/Debug/MysqlConnection.csprojAssemblyReference.cache
+/home/jose/Projects/MysqlConnection/MysqlConnection/bin/Debug/MysqlConnection.exe
+/home/jose/Projects/MysqlConnection/MysqlConnection/bin/Debug/MysqlConnection.pdb
+/home/jose/Projects/MysqlConnection/MysqlConnection/bin/Debug/MySql.Data.dll
+/home/jose/Projects/MysqlConnection/MysqlConnection/bin/Debug/Google.Protobuf.dll
+/home/jose/Projects/MysqlConnection/MysqlConnection/bin/Debug/BouncyCastle.Crypto.dll
+/home/jose/Projects/MysqlConnection/MysqlConnection/bin/Debug/Renci.SshNet.dll
+/home/jose/Projects/MysqlConnection/MysqlConnection/bin/Debug/MySql.Data.xml
+/home/jose/Projects/MysqlConnection/MysqlConnection/obj/x86/Debug/MysqlConnection.csproj.CopyComplete
+/home/jose/Projects/MysqlConnection/MysqlConnection/obj/x86/Debug/MysqlConnection.exe
+/home/jose/Projects/MysqlConnection/MysqlConnection/obj/x86/Debug/MysqlConnection.pdb

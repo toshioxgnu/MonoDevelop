@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{11BA5B8A-86CA-45D2-A865-452F777BDC3F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MysqlConnection/MainWindow.cs">
+    <Files>
+      <File FileName="MysqlConnection/Program.cs" Line="1" Column="14" />
+      <File FileName="MysqlConnection/MainWindow.cs" Line="22" Column="60" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MysqlConnection" expanded="True">
+            <Node name="MysqlConnection" expanded="True">
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.MysqlConnection PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
