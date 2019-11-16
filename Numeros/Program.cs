@@ -9,7 +9,7 @@ namespace Numeros {
             nombreNumero (num);
             Console.ReadKey ();
         }
-        // Recibira como parametros dos numeros y devolvera
+        // Recibira como parametros dos numeros y devolvera El nombre del Numero en cuestion
         static void nombreNumero (int numero) {
             switch (numero) {
                 case 1:
