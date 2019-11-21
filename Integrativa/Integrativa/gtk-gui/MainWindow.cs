@@ -5,13 +5,15 @@ public partial class MainWindow
 {
 	private global::Gtk.Fixed fixed1;
 
-	private global::Gtk.Button bttnSalir;
-
-	private global::Gtk.Button botonElimina;
-
 	private global::Gtk.Button botonAgrega;
 
 	private global::Gtk.Button bttnConsultar;
+
+	private global::Gtk.Button botonElimina;
+
+	private global::Gtk.Button bttnSalir;
+
+	private global::Gtk.Button button26;
 
 	protected virtual void Build()
 	{
@@ -25,28 +27,6 @@ public partial class MainWindow
 		this.fixed1.Name = "fixed1";
 		this.fixed1.HasWindow = false;
 		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.bttnSalir = new global::Gtk.Button();
-		this.bttnSalir.WidthRequest = 200;
-		this.bttnSalir.CanFocus = true;
-		this.bttnSalir.Name = "bttnSalir";
-		this.bttnSalir.UseUnderline = true;
-		this.bttnSalir.Label = global::Mono.Unix.Catalog.GetString("Salir");
-		this.fixed1.Add(this.bttnSalir);
-		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.bttnSalir]));
-		w1.X = 101;
-		w1.Y = 252;
-		// Container child fixed1.Gtk.Fixed+FixedChild
-		this.botonElimina = new global::Gtk.Button();
-		this.botonElimina.WidthRequest = 200;
-		this.botonElimina.CanFocus = true;
-		this.botonElimina.Name = "botonElimina";
-		this.botonElimina.UseUnderline = true;
-		this.botonElimina.Label = global::Mono.Unix.Catalog.GetString("Eliminar Producto");
-		this.fixed1.Add(this.botonElimina);
-		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.botonElimina]));
-		w2.X = 102;
-		w2.Y = 202;
-		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.botonAgrega = new global::Gtk.Button();
 		this.botonAgrega.WidthRequest = 200;
 		this.botonAgrega.CanFocus = true;
@@ -54,9 +34,9 @@ public partial class MainWindow
 		this.botonAgrega.UseUnderline = true;
 		this.botonAgrega.Label = global::Mono.Unix.Catalog.GetString("Agegar Producto");
 		this.fixed1.Add(this.botonAgrega);
-		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.botonAgrega]));
-		w3.X = 94;
-		w3.Y = 42;
+		global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.botonAgrega]));
+		w1.X = 101;
+		w1.Y = 21;
 		// Container child fixed1.Gtk.Fixed+FixedChild
 		this.bttnConsultar = new global::Gtk.Button();
 		this.bttnConsultar.WidthRequest = 200;
@@ -65,9 +45,42 @@ public partial class MainWindow
 		this.bttnConsultar.UseUnderline = true;
 		this.bttnConsultar.Label = global::Mono.Unix.Catalog.GetString("Consultar Producto");
 		this.fixed1.Add(this.bttnConsultar);
-		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.bttnConsultar]));
-		w4.X = 95;
-		w4.Y = 99;
+		global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.bttnConsultar]));
+		w2.X = 99;
+		w2.Y = 67;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.botonElimina = new global::Gtk.Button();
+		this.botonElimina.WidthRequest = 200;
+		this.botonElimina.CanFocus = true;
+		this.botonElimina.Name = "botonElimina";
+		this.botonElimina.UseUnderline = true;
+		this.botonElimina.Label = global::Mono.Unix.Catalog.GetString("Eliminar Producto");
+		this.fixed1.Add(this.botonElimina);
+		global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.botonElimina]));
+		w3.X = 100;
+		w3.Y = 189;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.bttnSalir = new global::Gtk.Button();
+		this.bttnSalir.WidthRequest = 200;
+		this.bttnSalir.CanFocus = true;
+		this.bttnSalir.Name = "bttnSalir";
+		this.bttnSalir.UseUnderline = true;
+		this.bttnSalir.Label = global::Mono.Unix.Catalog.GetString("Salir");
+		this.fixed1.Add(this.bttnSalir);
+		global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.bttnSalir]));
+		w4.X = 101;
+		w4.Y = 240;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.button26 = new global::Gtk.Button();
+		this.button26.WidthRequest = 200;
+		this.button26.CanFocus = true;
+		this.button26.Name = "button26";
+		this.button26.UseUnderline = true;
+		this.button26.Label = global::Mono.Unix.Catalog.GetString("Modificar producto");
+		this.fixed1.Add(this.button26);
+		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button26]));
+		w5.X = 99;
+		w5.Y = 114;
 		this.Add(this.fixed1);
 		if ((this.Child != null))
 		{
@@ -77,9 +90,10 @@ public partial class MainWindow
 		this.DefaultHeight = 337;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
-		this.bttnSalir.Clicked += new global::System.EventHandler(this.OnButton2Clicked);
-		this.botonElimina.Clicked += new global::System.EventHandler(this.OnBotonEliminaClicked);
 		this.botonAgrega.Clicked += new global::System.EventHandler(this.OnButton1Clicked);
 		this.bttnConsultar.Clicked += new global::System.EventHandler(this.OnBttnConsultarClicked);
+		this.botonElimina.Clicked += new global::System.EventHandler(this.OnBotonEliminaClicked);
+		this.bttnSalir.Clicked += new global::System.EventHandler(this.OnButton2Clicked);
+		this.button26.Clicked += new global::System.EventHandler(this.OnButton26Clicked);
 	}
 }
