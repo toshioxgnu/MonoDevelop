@@ -4,9 +4,10 @@
     <images-root-path>..</images-root-path>
   </configuration>
   <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Integrativa.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="335 495">
+  <widget class="Gtk.Window" id="MainWindow" design-size="423 337">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Tienda de Abarrotes</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -16,17 +17,78 @@
         <property name="MemberName" />
         <property name="HasWindow">False</property>
         <child>
-          <widget class="Gtk.Button" id="button1">
+          <widget class="Gtk.Button" id="botonAgrega">
             <property name="MemberName" />
+            <property name="WidthRequest">200</property>
             <property name="CanFocus">True</property>
-            <property name="Type">TextAndIcon</property>
-            <property name="Label" translatable="yes">_OK</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Agegar Producto</property>
             <property name="UseUnderline">True</property>
             <signal name="Clicked" handler="OnButton1Clicked" />
           </widget>
           <packing>
-            <property name="X">73</property>
-            <property name="Y">83</property>
+            <property name="X">101</property>
+            <property name="Y">21</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="bttnConsultar">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Consultar Producto</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnBttnConsultarClicked" />
+          </widget>
+          <packing>
+            <property name="X">99</property>
+            <property name="Y">67</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="botonElimina">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Eliminar Producto</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnBotonEliminaClicked" />
+          </widget>
+          <packing>
+            <property name="X">100</property>
+            <property name="Y">189</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="bttnSalir">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Salir</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton2Clicked" />
+          </widget>
+          <packing>
+            <property name="X">101</property>
+            <property name="Y">240</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button26">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Modificar producto</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton26Clicked" />
+          </widget>
+          <packing>
+            <property name="X">99</property>
+            <property name="Y">114</property>
           </packing>
         </child>
       </widget>
@@ -47,6 +109,7 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Agregar</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton2Clicked" />
           </widget>
           <packing>
             <property name="X">26</property>
@@ -60,13 +123,157 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Cancelar</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton4Clicked" />
           </widget>
           <packing>
             <property name="X">200</property>
             <property name="Y">397</property>
           </packing>
         </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">ID</property>
+          </widget>
+          <packing>
+            <property name="X">20</property>
+            <property name="Y">88</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">18</property>
+            <property name="Y">116</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label3">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Precio</property>
+          </widget>
+          <packing>
+            <property name="X">24</property>
+            <property name="Y">162</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry3">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">18</property>
+            <property name="Y">189</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry1">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">21</property>
+            <property name="Y">48</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombre Producto</property>
+          </widget>
+          <packing>
+            <property name="X">26</property>
+            <property name="Y">21</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label4">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Cantidad</property>
+          </widget>
+          <packing>
+            <property name="X">25</property>
+            <property name="Y">232</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry4">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">15</property>
+            <property name="Y">266</property>
+          </packing>
+        </child>
       </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Integrativa.Eliminar" design-size="280 414">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Eliminar</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Button" id="button1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Cancelar</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton1Clicked" />
+          </widget>
+          <packing>
+            <property name="X">152</property>
+            <property name="Y">353</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button3">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Eliminar</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">51</property>
+            <property name="Y">353</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Integrativa.ConsultarProducto" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">ConsultarProducto</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Integrativa.Modificar" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Modificar</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
     </child>
   </widget>
 </stetic-interface>
