@@ -10,6 +10,14 @@ namespace Integrativa
 
 		private global::Gtk.Button button3;
 
+		private global::Gtk.Entry entry1;
+
+		private global::Gtk.Label label1;
+
+		private global::Gtk.Entry entry2;
+
+		private global::Gtk.Label label2;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -41,6 +49,42 @@ namespace Integrativa
 			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.button3]));
 			w2.X = 51;
 			w2.Y = 353;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.entry1 = new global::Gtk.Entry();
+			this.entry1.CanFocus = true;
+			this.entry1.Name = "entry1";
+			this.entry1.IsEditable = true;
+			this.entry1.InvisibleChar = '•';
+			this.fixed1.Add(this.entry1);
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry1]));
+			w3.X = 23;
+			w3.Y = 59;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label1 = new global::Gtk.Label();
+			this.label1.Name = "label1";
+			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("ID ");
+			this.fixed1.Add(this.label1);
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label1]));
+			w4.X = 26;
+			w4.Y = 23;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.entry2 = new global::Gtk.Entry();
+			this.entry2.CanFocus = true;
+			this.entry2.Name = "entry2";
+			this.entry2.IsEditable = true;
+			this.entry2.InvisibleChar = '•';
+			this.fixed1.Add(this.entry2);
+			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.entry2]));
+			w5.X = 26;
+			w5.Y = 146;
+			// Container child fixed1.Gtk.Fixed+FixedChild
+			this.label2 = new global::Gtk.Label();
+			this.label2.Name = "label2";
+			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("Nombre");
+			this.fixed1.Add(this.label2);
+			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.label2]));
+			w6.X = 30;
+			w6.Y = 111;
 			this.Add(this.fixed1);
 			if ((this.Child != null))
 			{
@@ -50,6 +94,7 @@ namespace Integrativa
 			this.DefaultHeight = 414;
 			this.Show();
 			this.button1.Clicked += new global::System.EventHandler(this.OnButton1Clicked);
+			this.button3.Clicked += new global::System.EventHandler(this.OnButton3Clicked);
 		}
 	}
 }

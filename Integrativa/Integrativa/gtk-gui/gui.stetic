@@ -251,10 +251,55 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Eliminar</property>
             <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton3Clicked" />
           </widget>
           <packing>
             <property name="X">51</property>
             <property name="Y">353</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">23</property>
+            <property name="Y">59</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">ID </property>
+          </widget>
+          <packing>
+            <property name="X">26</property>
+            <property name="Y">23</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Entry" id="entry2">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">26</property>
+            <property name="Y">146</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombre</property>
+          </widget>
+          <packing>
+            <property name="X">30</property>
+            <property name="Y">111</property>
           </packing>
         </child>
       </widget>
