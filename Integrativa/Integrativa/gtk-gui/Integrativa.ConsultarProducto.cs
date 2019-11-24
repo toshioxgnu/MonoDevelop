@@ -4,6 +4,22 @@ namespace Integrativa
 {
 	public partial class ConsultarProducto
 	{
+		private global::Gtk.Fixed fixed3;
+
+		private global::Gtk.Entry entry1;
+
+		private global::Gtk.Label label1;
+
+		private global::Gtk.Button buscarBoton;
+
+		private global::Gtk.Button button2;
+
+		private global::Gtk.ScrolledWindow GtkScrolledWindow;
+
+		private global::Gtk.NodeView nodeview2;
+
+		private global::Gtk.Button button3;
+
 		protected virtual void Build()
 		{
 			global::Stetic.Gui.Initialize(this);
@@ -11,13 +27,88 @@ namespace Integrativa
 			this.Name = "Integrativa.ConsultarProducto";
 			this.Title = global::Mono.Unix.Catalog.GetString("ConsultarProducto");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+			// Container child Integrativa.ConsultarProducto.Gtk.Container+ContainerChild
+			this.fixed3 = new global::Gtk.Fixed();
+			this.fixed3.Name = "fixed3";
+			this.fixed3.HasWindow = false;
+			// Container child fixed3.Gtk.Fixed+FixedChild
+			this.entry1 = new global::Gtk.Entry();
+			this.entry1.WidthRequest = 300;
+			this.entry1.CanFocus = true;
+			this.entry1.Name = "entry1";
+			this.entry1.IsEditable = true;
+			this.entry1.InvisibleChar = '•';
+			this.fixed3.Add(this.entry1);
+			global::Gtk.Fixed.FixedChild w1 = ((global::Gtk.Fixed.FixedChild)(this.fixed3[this.entry1]));
+			w1.X = 65;
+			w1.Y = 62;
+			// Container child fixed3.Gtk.Fixed+FixedChild
+			this.label1 = new global::Gtk.Label();
+			this.label1.Name = "label1";
+			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Nombre Producto");
+			this.fixed3.Add(this.label1);
+			global::Gtk.Fixed.FixedChild w2 = ((global::Gtk.Fixed.FixedChild)(this.fixed3[this.label1]));
+			w2.X = 71;
+			w2.Y = 21;
+			// Container child fixed3.Gtk.Fixed+FixedChild
+			this.buscarBoton = new global::Gtk.Button();
+			this.buscarBoton.WidthRequest = 100;
+			this.buscarBoton.CanFocus = true;
+			this.buscarBoton.Name = "buscarBoton";
+			this.buscarBoton.UseUnderline = true;
+			this.buscarBoton.Label = global::Mono.Unix.Catalog.GetString("Buscar");
+			this.fixed3.Add(this.buscarBoton);
+			global::Gtk.Fixed.FixedChild w3 = ((global::Gtk.Fixed.FixedChild)(this.fixed3[this.buscarBoton]));
+			w3.X = 378;
+			w3.Y = 63;
+			// Container child fixed3.Gtk.Fixed+FixedChild
+			this.button2 = new global::Gtk.Button();
+			this.button2.WidthRequest = 100;
+			this.button2.CanFocus = true;
+			this.button2.Name = "button2";
+			this.button2.UseUnderline = true;
+			this.button2.Label = global::Mono.Unix.Catalog.GetString("Salir");
+			this.fixed3.Add(this.button2);
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed3[this.button2]));
+			w4.X = 488;
+			w4.Y = 62;
+			// Container child fixed3.Gtk.Fixed+FixedChild
+			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
+			this.GtkScrolledWindow.WidthRequest = 500;
+			this.GtkScrolledWindow.HeightRequest = 500;
+			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
+			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
+			this.nodeview2 = new global::Gtk.NodeView();
+			this.nodeview2.CanFocus = true;
+			this.nodeview2.Name = "nodeview2";
+			this.GtkScrolledWindow.Add(this.nodeview2);
+			this.fixed3.Add(this.GtkScrolledWindow);
+			global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed3[this.GtkScrolledWindow]));
+			w6.X = 75;
+			w6.Y = 137;
+			// Container child fixed3.Gtk.Fixed+FixedChild
+			this.button3 = new global::Gtk.Button();
+			this.button3.WidthRequest = 200;
+			this.button3.CanFocus = true;
+			this.button3.Name = "button3";
+			this.button3.UseUnderline = true;
+			this.button3.Label = global::Mono.Unix.Catalog.GetString("Ver Todo");
+			this.fixed3.Add(this.button3);
+			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed3[this.button3]));
+			w7.X = 75;
+			w7.Y = 99;
+			this.Add(this.fixed3);
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 400;
-			this.DefaultHeight = 300;
+			this.DefaultWidth = 629;
+			this.DefaultHeight = 671;
 			this.Show();
+			this.buscarBoton.Clicked += new global::System.EventHandler(this.OnBuscarBotonClicked);
+			this.button2.Clicked += new global::System.EventHandler(this.OnButton2Clicked);
+			this.button3.Clicked += new global::System.EventHandler(this.OnButton3Clicked);
 		}
 	}
 }

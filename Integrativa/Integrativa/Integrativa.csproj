@@ -96,6 +96,7 @@
     <Compile Include="gtk-gui\Integrativa.ConsultarProducto.cs" />
     <Compile Include="Modificar.cs" />
     <Compile Include="gtk-gui\Integrativa.Modificar.cs" />
+    <Compile Include="nodeView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

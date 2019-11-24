@@ -5,11 +5,11 @@
   </configuration>
   <import>
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <widget-library name="../bin/Release/Integrativa.exe" internal="true" />
+    <widget-library name="../bin/Debug/Integrativa.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="423 337">
+  <widget class="Gtk.Window" id="MainWindow" design-size="295 425">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">Tienda de Abarrotes</property>
+    <property name="Title" translatable="yes">El bazar de Josesin</property>
     <property name="WindowPosition">CenterOnParent</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
@@ -27,8 +27,8 @@
             <signal name="Clicked" handler="OnButton1Clicked" />
           </widget>
           <packing>
-            <property name="X">101</property>
-            <property name="Y">21</property>
+            <property name="X">54</property>
+            <property name="Y">25</property>
           </packing>
         </child>
         <child>
@@ -42,38 +42,8 @@
             <signal name="Clicked" handler="OnBttnConsultarClicked" />
           </widget>
           <packing>
-            <property name="X">99</property>
-            <property name="Y">67</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="botonElimina">
-            <property name="MemberName" />
-            <property name="WidthRequest">200</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Eliminar Producto</property>
-            <property name="UseUnderline">True</property>
-            <signal name="Clicked" handler="OnBotonEliminaClicked" />
-          </widget>
-          <packing>
-            <property name="X">100</property>
-            <property name="Y">189</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="bttnSalir">
-            <property name="MemberName" />
-            <property name="WidthRequest">200</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Salir</property>
-            <property name="UseUnderline">True</property>
-            <signal name="Clicked" handler="OnButton2Clicked" />
-          </widget>
-          <packing>
-            <property name="X">101</property>
-            <property name="Y">240</property>
+            <property name="X">53</property>
+            <property name="Y">59</property>
           </packing>
         </child>
         <child>
@@ -87,8 +57,38 @@
             <signal name="Clicked" handler="OnButton26Clicked" />
           </widget>
           <packing>
-            <property name="X">99</property>
-            <property name="Y">114</property>
+            <property name="X">52</property>
+            <property name="Y">97</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="bttnSalir">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Salir</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton2Clicked" />
+          </widget>
+          <packing>
+            <property name="X">52</property>
+            <property name="Y">348</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="botonElimina">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Eliminar Producto</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnBotonEliminaClicked" />
+          </widget>
+          <packing>
+            <property name="X">53</property>
+            <property name="Y">305</property>
           </packing>
         </child>
       </widget>
@@ -260,12 +260,102 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="Integrativa.ConsultarProducto" design-size="400 300">
+  <widget class="Gtk.Window" id="Integrativa.ConsultarProducto" design-size="629 671">
     <property name="MemberName" />
     <property name="Title" translatable="yes">ConsultarProducto</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
-      <placeholder />
+      <widget class="Gtk.Fixed" id="fixed3">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Entry" id="entry1">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">•</property>
+          </widget>
+          <packing>
+            <property name="X">65</property>
+            <property name="Y">62</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Nombre Producto</property>
+          </widget>
+          <packing>
+            <property name="X">71</property>
+            <property name="Y">21</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buscarBoton">
+            <property name="MemberName" />
+            <property name="WidthRequest">100</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Buscar</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnBuscarBotonClicked" />
+          </widget>
+          <packing>
+            <property name="X">378</property>
+            <property name="Y">63</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button2">
+            <property name="MemberName" />
+            <property name="WidthRequest">100</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Salir</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton2Clicked" />
+          </widget>
+          <packing>
+            <property name="X">488</property>
+            <property name="Y">62</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+            <property name="MemberName" />
+            <property name="WidthRequest">500</property>
+            <property name="HeightRequest">500</property>
+            <property name="ShadowType">In</property>
+            <child>
+              <widget class="Gtk.NodeView" id="nodeview2">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="ShowScrollbars">True</property>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="X">75</property>
+            <property name="Y">137</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button3">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Ver Todo</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton3Clicked" />
+          </widget>
+          <packing>
+            <property name="X">75</property>
+            <property name="Y">99</property>
+          </packing>
+        </child>
+      </widget>
     </child>
   </widget>
   <widget class="Gtk.Window" id="Integrativa.Modificar" design-size="400 300">
