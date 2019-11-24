@@ -25,7 +25,7 @@ namespace Integrativa
             connectionString = "server=localhost;database=TIENDA_ABARROTES;uid=root;pwd=root;";
             connection1 = new MySqlConnection(connectionString);
             connection1.Open();
-            query = "select * from tbProductos where Nombre = '" + this.entry1.Text + "';";
+            query = "select * from tbProductos where Nombre like '%" + this.entry1.Text + "%' order by Precio asc;";
             MySqlCommand MyCommand2 = new MySqlCommand(query, connection1);
             MySqlDataReader MyReader2;
             MyReader2 = MyCommand2.ExecuteReader();

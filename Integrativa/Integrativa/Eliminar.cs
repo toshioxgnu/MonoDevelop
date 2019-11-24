@@ -25,7 +25,7 @@ namespace Integrativa
             connectionString = "server=localhost;database=TIENDA_ABARROTES;uid=root;pwd=root;";
             connection1 = new MySqlConnection(connectionString);
             connection1.Open();
-            query = "delete from tbProductos where ID = '" + this.entry1.Text + "';";
+            query = "delete from tbProductos where ID like = '" + this.entry1.Text + "';";
             query = "delete from tbProductos where Nombre = '" + this.entry2.Text + "';";
             MySqlDataReader MyReader2;
             MySqlCommand MyCommand2 = new MySqlCommand(query, connection1);
