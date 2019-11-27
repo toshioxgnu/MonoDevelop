@@ -41,4 +41,10 @@ public partial class MainWindow : Gtk.Window
         Integrativa.Modificar modificar = new Integrativa.Modificar();
         modificar.Show();
     }
+
+    protected void OnbotonVentaClicked(object sended, EventArgs e)
+    {
+        Integrativa.Venta venta = new Integrativa.Venta();
+        venta.Show();
+    }
 }

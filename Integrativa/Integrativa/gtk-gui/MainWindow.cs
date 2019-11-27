@@ -15,6 +15,8 @@ public partial class MainWindow
 
 	private global::Gtk.Button botonElimina;
 
+	private global::Gtk.Button botonVenta;
+
 	protected virtual void Build()
 	{
 		global::Stetic.Gui.Initialize(this);
@@ -81,12 +83,23 @@ public partial class MainWindow
 		global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.botonElimina]));
 		w5.X = 53;
 		w5.Y = 305;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.botonVenta = new global::Gtk.Button();
+		this.botonVenta.WidthRequest = 200;
+		this.botonVenta.CanFocus = true;
+		this.botonVenta.Name = "botonVenta";
+		this.botonVenta.UseUnderline = true;
+		this.botonVenta.Label = global::Mono.Unix.Catalog.GetString("Venta");
+		this.fixed1.Add(this.botonVenta);
+		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1[this.botonVenta]));
+		w6.X = 50;
+		w6.Y = 173;
 		this.Add(this.fixed1);
 		if ((this.Child != null))
 		{
 			this.Child.ShowAll();
 		}
-		this.DefaultWidth = 295;
+		this.DefaultWidth = 307;
 		this.DefaultHeight = 425;
 		this.Show();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
@@ -95,5 +108,6 @@ public partial class MainWindow
 		this.button26.Clicked += new global::System.EventHandler(this.OnButton26Clicked);
 		this.bttnSalir.Clicked += new global::System.EventHandler(this.OnButton2Clicked);
 		this.botonElimina.Clicked += new global::System.EventHandler(this.OnBotonEliminaClicked);
+		this.botonVenta.Clicked += new global::System.EventHandler(this.OnbotonVentaClicked);
 	}
 }
