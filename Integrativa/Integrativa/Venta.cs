@@ -7,6 +7,8 @@ namespace Integrativa
     public partial class Venta : Gtk.Window
     {
         int preciofinal;
+        int nuevoStock;
+        int stock, cantidad;
         public Venta() :
                 base(WindowType.Toplevel) => Build();
 
@@ -24,7 +26,7 @@ namespace Integrativa
             connectionString = "server=localhost;database=TIENDA_ABARROTES;uid=root;pwd=root;";
             connection1 = new MySqlConnection(connectionString);
             connection1.Open();
-            query = "select ID, Nombre,Precio from tbProductos where ID='"+ this.entry1.Text+"';";
+            query = "select ID, Nombre,Precio,Cantidad from tbProductos where ID='"+ this.entry1.Text+"';";
             MySqlCommand MyCommand2 = new MySqlCommand(query, connection1);
             MySqlDataReader MyReader2;
             MyReader2 = MyCommand2.ExecuteReader();
@@ -35,14 +37,16 @@ namespace Integrativa
             nodeview1.AppendColumn("Precio", new CellRendererText(), "text", 2);
             nodeview1.Model = tipoListado;
 
+
             while (MyReader2.Read())
             {
 
                 string id = (string)MyReader2["ID"];
                 string nombre = (string)MyReader2["Nombre"];
+                stock = Convert.ToInt32(MyReader2["Cantidad"]);
                 int precio = Convert.ToInt32(MyReader2["Precio"]);
-                int cantidad = Convert.ToInt32(entry6.Text);
-                tipoListado.AppendValues(id, nombre, precio);
+                cantidad = Convert.ToInt32(entry6.Text);
+                tipoListado.AppendValues(id, nombre, precio.ToString());
                 preciofinal = precio * cantidad;
 
                 nodeview1.EnableGridLines = TreeViewGridLines.Horizontal;
@@ -61,7 +65,18 @@ namespace Integrativa
 
         protected void OnButton2Clicked(object sender, EventArgs e)
         {
+            string connectionString = null;
+            MySqlConnection connection1;
+            connectionString = "server=localhost;database=TIENDA_ABARROTES;uid=root;pwd=root;";
+            connection1 = new MySqlConnection(connectionString);
+            connection1.Open();
+            nuevoStock = stock - cantidad;
+            string query2 = "update tbProductos set Cantidad='" + nuevoStock.ToString() +"' where ID = '" + this.entry1.Text + "';";
+            MySqlCommand MyCommand3 = new MySqlCommand(query2, connection1);
+            MySqlDataReader MyReader2;
+            MyReader2 = MyCommand3.ExecuteReader();
             this.entry7.Text = preciofinal.ToString();
+            connection1.Close();
 
         }
     }
