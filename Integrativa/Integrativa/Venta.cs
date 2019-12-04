@@ -6,6 +6,7 @@ namespace Integrativa
 {
     public partial class Venta : Gtk.Window
     {
+        int preciofinal;
         public Venta() :
                 base(WindowType.Toplevel) => Build();
 
@@ -39,18 +40,29 @@ namespace Integrativa
 
                 string id = (string)MyReader2["ID"];
                 string nombre = (string)MyReader2["Nombre"];
-                string precio = (string)MyReader2["Precio"];
+                int precio = Convert.ToInt32(MyReader2["Precio"]);
+                int cantidad = Convert.ToInt32(entry6.Text);
                 tipoListado.AppendValues(id, nombre, precio);
+                preciofinal = precio * cantidad;
 
                 nodeview1.EnableGridLines = TreeViewGridLines.Horizontal;
 
+
             }
+
+
             connection1.Close();
         }
 
         protected void OnButton3Clicked(object sender, EventArgs e)
         {
             this.Destroy();
+        }
+
+        protected void OnButton2Clicked(object sender, EventArgs e)
+        {
+            this.entry7.Text = preciofinal.ToString();
+
         }
     }
 }
